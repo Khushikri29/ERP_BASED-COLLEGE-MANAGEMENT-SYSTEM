@@ -26,6 +26,7 @@ import WardenNotifications from "./components/HostelWarden/WardenNotification";
 import HostelRequests from "./components/HostelWarden/WardenHostenRequest";
 import RoomAvailability from "./components/HostelWarden/WardenAvailableRooms";
 import AllottedRooms from "./components/HostelWarden/WardenAllotedRooms";
+import HodLayout from "./components/Hod/HodLayout";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
         <Route path="/hostel/room-request" element={<HostelRequests />} />
         <Route path="/hostel/available-rooms" element={<RoomAvailability />} />
         <Route path="/hostel/alloted-rooms" element={<AllottedRooms />} />
+        <Route path="/hod" element={<HodLayout />} />
       </Routes>
     </BrowserRouter>
   );
