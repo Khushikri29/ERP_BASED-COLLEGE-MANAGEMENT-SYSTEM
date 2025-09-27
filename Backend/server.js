@@ -7,7 +7,10 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8080;
 
-const supabase = createClient(process.env.DATABASE_URL,process.env.DATABASE_KEY);
+export const supabase = createClient(
+  process.env.DATABASE_URL,
+  process.env.DATABASE_KEY
+);
 
 async function testConnection() {
   try {
@@ -25,14 +28,14 @@ async function testConnection() {
 
 testConnection();
 
-app.use(express.json())
-app.use(express.urlencoded({extended : false}))
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use("/auth",AuthRoute)
+app.use("/auth", AuthRoute);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
