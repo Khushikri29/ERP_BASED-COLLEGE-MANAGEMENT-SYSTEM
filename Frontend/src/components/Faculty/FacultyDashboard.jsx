@@ -4,6 +4,7 @@ import {
   School,
   PendingActions,
   UploadFile,
+  EventNote,
 } from '@mui/icons-material';
 
 // --- Data Extraction (retained here as it pertains to main content) ---
@@ -12,7 +13,7 @@ const statsCards = [
   { label: "My Classes", value: 4, icon: School },
   { label: "Pending Attendance", value: 1, icon: PendingActions },
   { label: "Resources Uploaded", value: 12, icon: UploadFile },
-  { label: "Upcoming Exams", value: 3, },
+  { label: "Upcoming Exams", value: 3, icon: EventNote },
 ];
 
 const todaysClasses = [
