@@ -27,6 +27,7 @@ import HostelRequests from "./components/HostelWarden/WardenHostenRequest";
 import RoomAvailability from "./components/HostelWarden/WardenAvailableRooms";
 import AllottedRooms from "./components/HostelWarden/WardenAllotedRooms";
 import HodLayout from "./components/Hod/HodLayout";
+import LibraryLayout from "./components/Library/LibraryLayout";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/hostel/available-rooms" element={<RoomAvailability />} />
         <Route path="/hostel/alloted-rooms" element={<AllottedRooms />} />
         <Route path="/hod" element={<HodLayout />} />
+        <Route path="/library" element={<LibraryLayout />} />
       </Routes>
     </BrowserRouter>
   );
